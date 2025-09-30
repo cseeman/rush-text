@@ -1,0 +1,307 @@
+/* Rush Text Generator - Clean, Minimal Design */
+
+/* Font Face Declarations - Rush Fonts from 2112.net */
+
+@font-face {
+  font-family: 'RushThroughTime';
+  src: url('/assets/fonts/rushfonts/RushThroughTime.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MovingPictures';
+  src: url('/assets/fonts/rushfonts/MovingPictures.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FlyByNight';
+  src: url('/assets/fonts/rushfonts/FlyByNightregular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FlyByNightItalic';
+  src: url('/assets/fonts/rushfonts/FlyByNightitalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CaressOfSteel';
+  src: url('/assets/fonts/rushfonts/CaressOfSteel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hemispheres';
+  src: url('/assets/fonts/rushfonts/Hemispheres.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PermanentWaves';
+  src: url('/assets/fonts/rushfonts/PermanentWaves.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WorkingMan';
+  src: url('/assets/fonts/rushfonts/WorkingMan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  color: #e0e0e0;
+  min-height: 100vh;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ff0080;
+  text-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  font-weight: 300;
+}
+
+/* Controls */
+.controls {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #00ffff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #ff0080;
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.3);
+}
+
+select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2300ffff' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+/* Range Slider */
+input[type="range"] {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ff0080;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+  transition: all 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.8);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ff0080;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+  transition: all 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.8);
+}
+
+#size-value {
+  color: #ff0080;
+  font-weight: 700;
+}
+
+/* Preview Container */
+.preview-container {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(0, 255, 255, 0.2);
+  box-shadow: inset 0 0 30px rgba(0, 255, 255, 0.1);
+}
+
+.text-preview {
+  font-family: 'WorkingMan', sans-serif;
+  font-size: 72px;
+  font-weight: normal;
+  color: #00ffff;
+  text-align: center;
+  word-wrap: break-word;
+  text-shadow:
+    0 0 10px rgba(0, 255, 255, 0.5),
+    0 0 20px rgba(0, 255, 255, 0.3),
+    0 0 30px rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  max-width: 100%;
+}
+
+/* Font Classes */
+.font-2112 {
+  font-family: 'RushThroughTime', sans-serif;
+  letter-spacing: 2px;
+}
+
+.font-moving-pictures {
+  font-family: 'MovingPictures', sans-serif;
+  letter-spacing: 1px;
+}
+
+.font-fly-by-night {
+  font-family: 'FlyByNightItalic', sans-serif;
+  font-style: italic;
+}
+
+.font-caress-of-steel {
+  font-family: 'CaressOfSteel', sans-serif;
+  letter-spacing: 3px;
+}
+
+.font-hemispheres {
+  font-family: 'Hemispheres', sans-serif;
+}
+
+.font-permanent-waves {
+  font-family: 'PermanentWaves', sans-serif;
+  letter-spacing: 1px;
+}
+
+.font-working-man {
+  font-family: 'WorkingMan', sans-serif;
+}
+
+/* Info */
+.info {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #808080;
+}
+
+.info a {
+  color: #00ffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info a:hover {
+  color: #ff0080;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .controls {
+    padding: 1.5rem;
+  }
+
+  .text-preview {
+    font-size: 48px;
+  }
+
+  .preview-container {
+    padding: 2rem 1rem;
+    min-height: 150px;
+  }
+}
