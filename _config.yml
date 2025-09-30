@@ -1,11 +1,10 @@
 title: Rush Text Generator
 description: Generate text using iconic Rush fonts
-baseurl: ""
-url: "https://yourusername.github.io"
+baseurl: "/rush-text"
+url: "https://cseeman.github.io"
 
 # Build settings
 markdown: kramdown
-theme: minima
 
 exclude:
   - Gemfile

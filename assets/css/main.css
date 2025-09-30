@@ -4,56 +4,56 @@
 
 @font-face {
   font-family: 'RushThroughTime';
-  src: url('/assets/fonts/rushfonts/RushThroughTime.ttf') format('truetype');
+  src: url('../fonts/rushfonts/RushThroughTime.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MovingPictures';
-  src: url('/assets/fonts/rushfonts/MovingPictures.ttf') format('truetype');
+  src: url('../fonts/rushfonts/MovingPictures.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FlyByNight';
-  src: url('/assets/fonts/rushfonts/FlyByNightregular.ttf') format('truetype');
+  src: url('../fonts/rushfonts/FlyByNightregular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FlyByNightItalic';
-  src: url('/assets/fonts/rushfonts/FlyByNightitalic.ttf') format('truetype');
+  src: url('../fonts/rushfonts/FlyByNightitalic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'CaressOfSteel';
-  src: url('/assets/fonts/rushfonts/CaressOfSteel.ttf') format('truetype');
+  src: url('../fonts/rushfonts/CaressOfSteel.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Hemispheres';
-  src: url('/assets/fonts/rushfonts/Hemispheres.ttf') format('truetype');
+  src: url('../fonts/rushfonts/Hemispheres.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PermanentWaves';
-  src: url('/assets/fonts/rushfonts/PermanentWaves.ttf') format('truetype');
+  src: url('../fonts/rushfonts/PermanentWaves.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'WorkingMan';
-  src: url('/assets/fonts/rushfonts/WorkingMan.ttf') format('truetype');
+  src: url('../fonts/rushfonts/WorkingMan.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
